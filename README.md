@@ -17,4 +17,4 @@ Materiales:
  - PCB impreso
 
 Para su correcto funcionamiento, el código de la ESP32 Wrover Cam debe estar acompañado de los archivos Base64.h y Base64.c. Además se debe de seleccionar el esquema de partición como "Huge App" para poder subir el código.
-Se recomienda usar un adaptador de corriente AC con salida de 12V 1~2A
+Se recomienda usar un adaptador de corriente AC con salida de 12V 1~2A por el alto consumo de corriente del motor y la cámara OV2640.
