@@ -16,5 +16,11 @@ Materiales:
  - 1 Resistencia 330 Ω
  - PCB impreso
 
-Para su correcto funcionamiento, se debe crear un archivo Google Script en el Google Drive que recibirá las imágenes el código de la ESP32 Wrover Cam debe estar acompañado de los archivos Base64.h y Base64.c. Además se debe de seleccionar el esquema de partición como "Huge App" para poder subir el código.
+Para su correcto funcionamiento, se debe crear un archivo Google Script en el Google Drive que recibirá las imágenes con el contenido del archivo "Google Script.txt". Una vez listo, se debe **Implementar** el archivo como **Aplicación Web** y se obtendrá el **ID de implementación** el cual hay que incluir en el código de la ESP32 Wrover Cam.
+
+const folderName = e.parameters.folder || 'ESP32-CAM' (Google Script)  --->    String myMainFolderName = "ESP32-CAM";   (Código ESP32 Wrover Cam)
+Esta línea se llenará con el nombre de la carpeta de Google Drive en donde se almacenarán los archivos. Puede crearla previamente, o si no el Google Script se encargará de crearla automáticamente.
+String myDeploymentID = "xxxxxx"
+
+El código de la ESP32 Wrover Cam debe estar acompañado de los archivos Base64.h y Base64.c. Además se debe de seleccionar el esquema de partición como "Huge App" para poder subir el código.
 Se recomienda usar un adaptador de corriente AC con salida de 12V 1~2A por el alto consumo de corriente del motor y la cámara OV2640.
