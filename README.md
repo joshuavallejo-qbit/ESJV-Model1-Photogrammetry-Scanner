@@ -16,6 +16,9 @@ Materiales:
  - 1 Resistencia 330 Ω
  - PCB impreso
 
+   ![image](https://github.com/user-attachments/assets/876d5d38-0e11-4363-9e9f-0998387d6226)
+
+
 Para su correcto funcionamiento, se debe crear un archivo Google Script en el Google Drive que recibirá las imágenes con el contenido del archivo "Google Script.txt". Una vez listo, se debe **Implementar** el archivo como **Aplicación Web** y se obtendrá el **ID de implementación** el cual hay que incluir en el código de la ESP32 Wrover Cam.
 
 String myDeploymentID = "xxxxxx"
